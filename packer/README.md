@@ -14,7 +14,8 @@
 
 
 ## 2. Basic Concepts of Packer
-### 1) Fuction : image creation -> users can used created images for cloud or infrasturcture(ex. aws AMI, vmware iso, vmware esxi image, ...)
+### 1) Fuction 
+image creation -> users can used created images for cloud or infrasturcture(ex. aws AMI, vmware iso, vmware esxi image, ...)
 
 ### 2) How to use? 
 ```
@@ -40,7 +41,8 @@ step 4. Create Image File
 - Packer does not start from zero base
 - Instead, Packer customizes image files of existing platforms (ex. AWS, dockers, vmware)
 
-### 5) Components of template(JSON file consists of a series of Packer's declarations and commands)
+### 5) Components of template
+- template : JSON file consists of a series of Packer's declarations and commands
 - builder (https://www.packer.io/docs/builders)
 Create machines and generate images depends on platform(AWS, GCP, ...) and os(window, linux, ...)
 
