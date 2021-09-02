@@ -42,17 +42,15 @@ step 4. Create Image File
 - Instead, Packer customizes image files of existing platforms (ex. AWS, dockers, vmware)
 
 ### 5) Components of template
-- template : JSON file consists of a series of Packer's declarations and commands
-- builder (https://www.packer.io/docs/builders)
-Create machines and generate images depends on platform(AWS, GCP, ...) and os(window, linux, ...)
+- template : JSON file consists of a series of Packer's declarations and commands (https://www.packer.io/docs/templates)
+- builder : Create machines and generate images depends on platform(AWS, GCP, ...) and os(window, linux, ...) (https://www.packer.io/docs/builders)
 
-- provisioners (https://www.packer.io/docs/provisioners)
-Use builtin and third-party software(shell script, ansible, chef, ..) to configure the image after booting
+- provisioners : Use builtin and third-party software(shell script, ansible, chef, ..) to configure the image after booting (https://www.packer.io/docs/provisioners)
 
-- post-processors (https://www.packer.io/docs/post-processors)
-Set up additional process to run after the image is built by the builder and provisioned 
+- post-processors : Set up additional process to run after the image is built by the builder and provisioned (https://www.packer.io/docs/post-processors) 
 
-### 6) Reference : https://www.packer.io/docs
+### 6) Reference 
+- https://www.packer.io/docs
 
 
 
@@ -74,7 +72,6 @@ step 4. add C:\packer to path of [System Variables] of [Environment Variables]
 cf. debug
 $ packer build -debug [template name]
 $ PACKER_LOG=1 packer build -debug [template name] > [log file name].txt 
-
 ```
 - validate : Check the syntax and configuration of a template
 - inspect : Provide a brief description of the template
